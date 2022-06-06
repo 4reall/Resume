@@ -6,6 +6,11 @@
 	--main-padding: 1rem
 }
 
+body {
+	position: relative;
+	z-index: -999;
+}
+
 main {
 	position: relative;
 	background: #feede6;

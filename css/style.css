@@ -75,6 +75,10 @@ main::before {
 	margin-right: var(--main-margin);
 }
 
+.title__title {
+	font-size: var(--font-reg);
+}
+
 .list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -235,7 +239,7 @@ main::before {
 
 .projects__title {
 	font-size: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
-	margin-bottom: calc(var(--main-margin) * 0.5);
+	margin-bottom: calc(var(--main-margin));
 }
 
 .projects__link {
@@ -260,7 +264,7 @@ main::before {
 .education__item {
 	position: relative;
 	font-size: var(--font-sm);
-	margin-bottom: calc(var(--main-margin) * 0.5);
+	margin-bottom: calc(var(--main-margin) * 0.75);
 }
 
 .education__item::before {
@@ -269,7 +273,7 @@ main::before {
 	width: calc(var(--main-margin) * 0.5);
 	height: calc(var(--main-margin) * 0.5);
 	top: calc(50% - calc(var(--main-margin) * 0.25));
-	left: calc(var(--main-margin) * -1);
+	left: calc(var(--main-margin) * -1.25);
 	border-radius: 50%;
 	background: #000;
 }

@@ -2,6 +2,7 @@
 	--font-lg: clamp(1rem, 4vw + 0.5rem, 2.25rem);
 	--font-reg: clamp(0.875rem, 3vw + 0.3rem, 1.75rem);
 	--font-sm: clamp(0.75rem, 1vw + 0.3rem, 1.25rem);
+	--line-h: clamp(0.8rem, 2vw + 0.3rem, 1.5rem);
 	--main-margin: 1rem;
 	--main-padding: 1rem
 }
@@ -156,8 +157,11 @@ main::before {
 }
 
 .about__descr {
+	text-indent: calc(var(--main-margin) * 2);
+	line-height: var(--line-h);
 	font-size: var(--font-sm);
 }
+
 
 .contact {
 	grid-row: span 2;
@@ -254,7 +258,9 @@ main::before {
 }
 
 .projects__descr {
+	text-indent: calc(var(--main-margin) * 2);
 	font-size: var(--font-sm);
+	line-height: var(--line-h);
 }
 
 .education__list {
@@ -262,9 +268,10 @@ main::before {
 }
 
 .education__item {
+	margin-bottom: calc(var(--main-margin) * 0.75);
 	position: relative;
 	font-size: var(--font-sm);
-	margin-bottom: calc(var(--main-margin) * 0.75);
+	line-height: var(--line-h);
 }
 
 .education__item::before {
